@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - Entry
- * Retun: always 0
+ * Return: always 0
  */
 
 int main(void)
