@@ -3,8 +3,7 @@
 /**
  *_islower - function that prints lowercase
  *@c: parameter to be printed
- *Return: 1 if its a lowercase
- *Return: 0 otherwise
+ *Return: 1 if its a lowercase or 0 otherwise
  */
 
 int _islower(int c)
