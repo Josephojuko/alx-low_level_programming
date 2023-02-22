@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int_abs - checks for absolute value
+ * _abs - checks for absolute value
  * @a: parameter
  * Return: always a
  */
