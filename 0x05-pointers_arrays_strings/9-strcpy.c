@@ -3,7 +3,7 @@
 /**
  *_strcpy - copy the string
  *@dest: destination
- *src: source
+ *@src: source
  *Retuen: string
  */
 char *_strcpy(char *dest, char *src)
