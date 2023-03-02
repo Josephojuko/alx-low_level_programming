@@ -3,11 +3,10 @@
 /**
  * _strcat - concateneating two strings
  * @dest: parameter
- * @src: inpur
- * @n: final
+ * @src: input
  * Return: a character
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int destlen = 0;
 	int srclen = 0;
@@ -20,3 +19,4 @@ char *_strcat(char *dest, char *src, int n)
 	for (i = 0; i <= srclen; i++)
 		dest[destlen + i] = src[i];
 	return (dest);
+}
