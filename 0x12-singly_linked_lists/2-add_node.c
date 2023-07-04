@@ -2,24 +2,24 @@
 #include <string.h>
 #include "lists.h"
 /**
-* added_noded - adds a nning
-* @hed: double plist_t list
+* add_node - adds a nning
+* @head: double plist_t list
 * @str: new string
 * Return: the address of th it fails
 */
-list_t *added_noded(list_t **hed, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	unsigned int lern = 0;
+	unsigned int len = 0;
 
-	while (str[lern])
-		lern++;
+	while (str[len])
+		len++;
 	new = malloc(sizeof(list_t));
 	if (!new)
 		return (NULL);
 	new->str = strdup(str);
-	new->lern = lern;
-	new->next = (*hed);
-	(*hed) = new;
-	return (*hed);
+	new->len = len;
+	new->next = (*head);
+	(*head) = new;
+	return (*head);
 }
