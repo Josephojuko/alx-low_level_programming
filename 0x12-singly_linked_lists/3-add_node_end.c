@@ -2,28 +2,28 @@
 #include <string.h>
 #include "lists.h"
 /**
-* added_noded_ended - adds a new nodeinked list
-* @hed: double list
+* add_node_end - adds a new nodeinked list
+* @head: double list
 * @str: string to  node
 * Return: address of ailed
 */
-list_t *added_noded_ended(list_t **hed, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
-	list_t *temp = *hed;
-	unsigned int lent = 0;
+	list_t *temp = *head;
+	unsigned int len = 0;
 
-	while (str[lent])
-		lent++;
+	while (str[len])
+		len++;
 	new = malloc(sizeof(list_t));
 	if (!new)
 		return (NULL);
 	new->str = strdup(str);
-	new->lent = lent;
+	new->len = len;
 	new->next = NULL;
-	if (*hed == NULL)
+	if (*head == NULL)
 	{
-		*hed = new;
+		*head = new;
 		return (new);
 	}
 	while (temp->next)

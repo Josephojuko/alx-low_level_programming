@@ -17,6 +17,6 @@ typedef struct list_s
 size_t print_list(const list_t *j);
 size_t list_len(const list_t *j);
 list_t *add_node(list_t **head, const char *str);
-list_t *added_noded_ended(list_t **hed, const char *str);
-void freed_listed(list_t *hed);
+list_t *add_node_end(list_t **head, const char *str);
+void free_list(list_t *head);
 #endif
