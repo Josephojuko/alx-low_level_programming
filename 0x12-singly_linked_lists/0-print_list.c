@@ -2,10 +2,10 @@
 #include "lists.h"
 /**
 * prt_lit - prints all tof a linked list
-* @h: point
+* @j: point
 * Return: the number ofd
 */
-size_t prt_lit(const list_t *h)
+size_t prt_lit(const list_t *j)
 {
 	size_t s = 0;
 
