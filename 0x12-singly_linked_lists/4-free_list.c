@@ -1,18 +1,18 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
-* freed_listed - frees  list
-* @hed: list_t list freed
+* free_list - frees  list
+* @head: list_t list freed
 */
-void freed_listed(list_t *hed)
+void free_list(list_t *head)
 {
 	list_t *temp;
 
-	while (hed)
+	while (head)
 	{
-		temp = hed->next;
-		free(hed->str);
-		free(hed);
-		hed = temp;
+		temp = head->next;
+		free(head->str);
+		free(head);
+		head = temp;
 	}
 }
