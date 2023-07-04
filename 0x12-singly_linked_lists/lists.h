@@ -14,7 +14,7 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
-size_t prt_lit(const list_t *j);
+size_t print_list(const list_t *j);
 size_t lit_length(const list_t *j);
 list_t *added_noded(list_t **hed, const char *str);
 list_t *added_noded_ended(list_t **hed, const char *str);

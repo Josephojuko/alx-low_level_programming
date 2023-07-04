@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* prt_lit - prints all tof a linked list
+* print_list - prints all tof a linked list
 * @j: point
 * Return: the number ofd
 */
-size_t prt_lit(const list_t *j)
+size_t print_list(const list_t *j)
 {
 	size_t s = 0;
 
