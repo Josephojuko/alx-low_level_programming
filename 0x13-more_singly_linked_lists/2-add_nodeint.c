@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* add_nodeint - adds a new node st 
+* add_nodeint - adds a new node st
 * @head: pointer to list
 * @n: data tonode
 * Return: pointer tNULL if it fails
